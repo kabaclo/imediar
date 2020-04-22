@@ -1,0 +1,116 @@
+$primary-color: #1d2227;
+$secondary-color: #271e1e;
+$tertiary-color: #b25e06;
+
+body {
+  background: $primary-color;
+}
+.brand-logo {
+  color: $tertiary-color !important;
+  font-size: 1.5rem !important;
+}
+ul li a {
+  font-weight: 300 !important;
+  outline: none !important;
+}
+
+.sidenav li > a {
+  color: #e4e1de !important;
+  font-weight: 400 !important;
+}
+
+.sidenav li:hover {
+  background: $primary-color !important;
+  color: #fff !important;
+}
+
+.yellow-text.text-lighten-3:focus {
+  border-bottom: $tertiary-color 2px solid !important;
+}
+
+.description-title {
+  font-size: 16px;
+  color: #fcc88e;
+}
+
+.description-date,
+.description-location {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+section {
+  background: $secondary-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.row-content {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.row-content .description {
+  padding-top: 0;
+  padding-bottom: 0;
+  bottom: 10px;
+  font-size: 10px;
+  width: 200px;
+  position: absolute;
+  left: 10%;
+  bottom: 1px;
+}
+.row-content .img {
+  width: 60%;
+}
+.row-content .img img {
+  width: 100%;
+}
+
+.description {
+  border: $tertiary-color 1px solid;
+  background: black;
+  opacity: 0.5;
+  color: $tertiary-color;
+  padding: 10px;
+}
+
+.card-action {
+  display: flex !important;
+}
+span.card-title {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: $tertiary-color;
+}
+.card-action > a {
+  font-size: 12px !important;
+  color: $tertiary-color !important;
+}
+
+.card-content p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 991px) {
+  .row-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .row-content .description {
+    display: none;
+  }
+  .brand-logo {
+    padding-left: 80px !important;
+  }
+}
+.section {
+  border-top: 1px solid rgb(78, 77, 77);
+  padding: 20px 0px;
+  background-color: #1d2227;
+  overflow: scroll;
+}
+.flow-text {
+  color: #fcc88e;
+}
